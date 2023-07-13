@@ -41,6 +41,10 @@ export interface FilterProps {
     model: string;
 }
 
+export interface HomeProps {
+  searchParams: FilterProps;
+}
+
 export interface OptionProps {
   title: string;
   value: string;  
@@ -48,7 +52,7 @@ export interface OptionProps {
 
 export interface CustomFilterProps {
 title: string;
-options: OptionsProps[];
+options: OptionProps[];
 }
 
 export interface ShowMoreProps {
